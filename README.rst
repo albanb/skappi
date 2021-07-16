@@ -8,7 +8,6 @@ A simple KPI builder.
 
 
 * Free software: MIT license
-* Documentation: https://skappi.readthedocs.io.
 
 
 Features
