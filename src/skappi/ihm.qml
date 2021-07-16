@@ -42,10 +42,18 @@ ApplicationWindow {
 	Component {
 		id: xls
 		Rectangle {
-			color: "red"
+			color: "green"
 		}
 	}
 
+	Component {
+		id: noConnection
+		Rectangle {
+			color: "red"
+			Text { text: "No other connection is implemented yet" }
+		}
+	}
+	
 	function load_page(page) {
 		switch(page) {
 			case 'connection':
@@ -53,6 +61,9 @@ ApplicationWindow {
 			break;
 			case 'xls':
 			stack.push(xls);
+			break;
+			case 'other':
+			stack.push(noConnection);
 			break;
 		}
 	}
